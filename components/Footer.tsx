@@ -6,8 +6,8 @@ import logo from "@/img/logo.png";
 function Footer() {
   return (
     <>
-      <footer className="px-4 hidden md:inline pt-8 mx-auto  bg-slate-100/70 w-full rounded-t-xl md:px-24 lg:px-8">
-        <div className="grid gap-16 row-gap-10 p-3 lg:grid-cols-6 bg-inherit">
+      <footer className="px-4 hidden md:inline pt-8 mx-auto   w-full rounded-t-xl md:px-24 lg:px-8">
+        <div className="grid gap-16 row-gap-10  p-3 lg:grid-cols-6 bg-slate-100/70">
           <div className="md:max-w-md lg:col-span-2">
             <Link
               href="/"
@@ -194,7 +194,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 bg-inherit pb-4 px-4 border-t sm:flex-row">
+        <div className="flex bg-slate-100/70  flex-col justify-between pt-5  pb-4 px-4 border-t sm:flex-row">
           <p className="text-sm text-gray-600">
             © کلیه حقوق این وب سایت متعلق به بیمزوو است.
           </p>
