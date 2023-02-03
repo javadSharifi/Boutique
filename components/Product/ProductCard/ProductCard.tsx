@@ -10,7 +10,10 @@ import PriceCard from "./PriceCard";
 function ProductCard({ img, name, price,colors }: cartProduct) {
   return (
     <Link href={"/a"}>
-      <div className=" h-[17rem] space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   ">
+      <div
+        data-aos="fade-left"
+        className=" h-[17rem] space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
+      >
         <div className="w-full rounded-2xl overflow-hidden  relative h-3/5  md:h-2/3   ">
           <Image
             src={img}

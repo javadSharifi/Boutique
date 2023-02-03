@@ -28,7 +28,10 @@ function SliderProducts({ link, products, children }: sliderProducts) {
       </div>
       <div className="flex justify-center ">
         <Link href={link} title="محصولات بیشتر">
-          <button className="button hover:h-14 h-12 text-red-400 bg-transparent  hover:border-red-500  border-red-500/80  px-14  hover:bg-transparent  hover:text-lg">
+          <button
+            data-aos="fade-up"
+            className="button hover:h-14 h-12 text-red-400 bg-transparent  hover:border-red-500  border-red-500/80  px-14  hover:bg-transparent  hover:text-lg"
+          >
             مشاهده همه
           </button>
         </Link>

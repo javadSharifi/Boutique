@@ -53,7 +53,10 @@ function ShegeftAngizan() {
    ];
   return (
     <SliderProducts link="a" products={products}>
-      <div className="flex justify-between h-16 px-2  items-center">
+      <div
+        data-aos="zoom-in"
+        className="flex justify-between h-16 px-2  items-center"
+      >
         <div className="flex gap-6 ">
           <div className=" text-2xl  lg:text-3xl space-x-2 md:space-x-3 flex">
             <div className="btn-timers ">{hours}</div>

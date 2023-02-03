@@ -6,9 +6,9 @@ import Image from "next/image";
 
 function Nev() {
   return (
-    <header className="w-full h-16  relative px-2 mt-3  flex justify-between ">
-      <div className="flex items-center w-full md:w-auto gap-6 ">
-        <div className="md:w-36 md:h-12 xl:w-44 xl:h-14 relative hidden md:inline">
+    <header className="w-full h-16  relative px-2 md:px-6 mt-3  flex justify-between ">
+      <div className="flex items-center w-full sm:w-auto gap-6 ">
+        <div className="md:w-36 md:h-12 xl:w-44 xl:h-14 relative hidden sm:w-32 sm:h-8 sm:inline">
           <Image
             fill
             src={logo}

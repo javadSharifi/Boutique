@@ -4,7 +4,10 @@ import React from "react";
 
 function BoxFeature({ img, name }: IBoxFeature) {
   return (
-    <div className=" flex flex-col  gap-2 w-40 h-28 text-xs md:text-base  md:w-52  justify-center items-center ">
+    <div
+      data-aos="zoom-in"
+      className=" flex flex-col  gap-2 w-40 h-28 text-xs md:text-base  md:w-52  justify-center items-center "
+    >
       <div className=" w-10 sm:w-16 sm:h-16 md:w-24 h-12 md:h-20 relative">
         <Image
           alt={name}

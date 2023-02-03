@@ -26,8 +26,10 @@ function Feature() {
     },
   ];
   return (
-    <div className="flex flex-col text-center py-6   mb-4   gap-9 ">
-      <h3 className="text-2xl"> ویژگی سایت فروشگاهی ما</h3>
+    <div
+
+      className="flex flex-col text-center  mb-4   gap-9 "
+    >
       <div className="flex justify-center md:gap-16 w-full">
         <>
           {data.map(({ img, name }) => (
