@@ -1,5 +1,6 @@
 import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import Auth from "../Auth";
 
 function Services() {
   return (
@@ -8,9 +9,7 @@ function Services() {
         <HeartIcon className="h-full cursor-pointer w-7 hover:text-red-500 " />
         <ShoppingCartIcon className="h-full cursor-pointer w-7 hover:text-red-500 " />
       </div>
-      <button className="button h-12 text-white bg-red-400 hover:bg-red-400 border-0  px-7">
-        ثبت نام
-      </button>
+      <Auth/>
     </div>
   );
 }
