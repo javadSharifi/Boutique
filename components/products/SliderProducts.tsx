@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function SliderProducts({ link, products, children }: sliderProducts) {
   return (
-    <div className="space-y-4  flex flex-col ">
+    <div className="space-y-4  ">
       {children}
       <div>
         <SliderForList>
@@ -30,7 +30,7 @@ function SliderProducts({ link, products, children }: sliderProducts) {
         <Link href={link} title="محصولات بیشتر">
           <button
             data-aos="fade-up"
-            className="button hover:h-14 h-12 text-red-400 bg-transparent  hover:border-red-500  border-red-500/80  px-14  hover:bg-transparent  hover:text-lg"
+            className="button hover:h-14 h-12 px-14  button-outline"
           >
             مشاهده همه
           </button>

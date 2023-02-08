@@ -6,8 +6,8 @@ import logo from "@/img/logo.png";
 function Auth() {
   return (
     <>
-      <label htmlFor="my-modal-4" className="button h-12 px-7">
-        <p>ورود / ثبت نام</p>
+      <label htmlFor="my-modal-4" className="">
+        <button className="button  h-12 px-7 font-bold">ورود / ثبت نام</button>
       </label>
 
       <input type="checkbox" id="my-modal-4" className="modal-toggle" />
@@ -16,7 +16,7 @@ function Auth() {
           <label htmlFor="my-modal-4" className=" text-2xl btn-circle  ">
             ✕
           </label>
-         
+
           <div className=" flex flex-col gap-5 justify-center items-center ">
             <h3 className="text-2xl font-bold ">ورود یا ثبت نام</h3>
             <h4>لطفا برای ادامه شماره همراه خود را وارد نمایید.</h4>

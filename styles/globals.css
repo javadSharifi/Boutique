@@ -18,7 +18,10 @@
     @apply bg-red-500/80 text-center  w-10 h-9 md:w-12 md:h-10   text-white rounded-lg
   }
   .button{
-    @apply btn      font-bold   transition-all duration-200 text-base  text-white bg-red-400 hover:bg-red-400 border-0 
+    @apply  rounded-lg text-center  transition-all duration-200 text-base  text-white bg-red-500/80 hover:bg-red-500 border-0 
+  }
+  .button-outline{
+    @apply  text-red-400 bg-transparent  border-2 hover:border-red-500  border-red-500/80    hover:bg-transparent  hover:text-lg
   }
   /* ... */
 }

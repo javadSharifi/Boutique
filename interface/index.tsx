@@ -23,6 +23,7 @@ export interface IBrandList {
 
 export interface IBoxFeature {
   img: StaticImageData;
+  className? : string;
   name: string;
 }
 

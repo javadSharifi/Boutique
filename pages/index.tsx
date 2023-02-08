@@ -26,7 +26,7 @@ export default function Home() {
         <Brand />
         <TopProduct />
         <Testimonials />
-        <Feature />
+        <Feature className=" w-10 sm:w-16 sm:h-16 md:w-24 h-12 md:h-20" />
       </div>
     </>
   );

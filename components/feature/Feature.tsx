@@ -6,7 +6,7 @@ import img3 from "@/feature/3.png";
 import img4 from "@/feature/4.png";
 import { IBoxFeature } from "interface";
 
-function Feature() {
+function Feature({className}:{className:string}) {
   const data: IBoxFeature[] = [
     {
       img: img1,
@@ -30,10 +30,10 @@ function Feature() {
 
       className="flex flex-col text-center  mb-4   gap-9 "
     >
-      <div className="flex justify-center md:gap-16 w-full">
+      <div className="flex relative   justify-center md:gap-16 w-full">
         <>
           {data.map(({ img, name }) => (
-            <BoxFeature key={name} img={img} name={name} />
+            <BoxFeature key={name} img={img} name={name} className={className} />
           ))}
         </>
       </div>
