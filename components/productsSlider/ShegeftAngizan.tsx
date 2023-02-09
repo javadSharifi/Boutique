@@ -7,7 +7,7 @@ import img7 from "public/img/moncan/7.jpg";
 import shegeftAngez from "public/img/shegeftAngez.png";
 import { useTimer } from "react-timer-hook";
 
-import SliderProducts from "./SliderProducts";
+import SliderProducts from "./ProductsSlider";
 import Image from "next/image";
 
 function ShegeftAngizan() {
@@ -19,38 +19,38 @@ function ShegeftAngizan() {
     onExpire: () => console.warn("onExpire called"),
   });
 
-   const products = [
-     {
-       name: "lorder 1",
-       price: "30",
-       img: img1,
-       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
-     },
-     {
-       name: "lorder 1",
-       price: "30",
-       img: img3,
-       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
-     },
-     {
-       name: "lorder 1",
-       price: "30",
-       img: img4,
-       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
-     },
-     {
-       name: "lorder 1",
-       price: "30",
-       img: img5,
-       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
-     },
-     {
-       name: "lorder 1",
-       price: "30",
-       img: img7,
-       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
-     },
-   ];
+  const products = [
+    {
+      name: "lorder 1",
+      price: "30",
+      img: img1,
+      colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
+    },
+    {
+      name: "lorder 1",
+      price: "30",
+      img: img3,
+      colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
+    },
+    {
+      name: "lorder 1",
+      price: "30",
+      img: img4,
+      colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
+    },
+    {
+      name: "lorder 1",
+      price: "30",
+      img: img5,
+      colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
+    },
+    {
+      name: "lorder 1",
+      price: "30",
+      img: img7,
+      colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
+    },
+  ];
   return (
     <SliderProducts link="a" products={products}>
       <div

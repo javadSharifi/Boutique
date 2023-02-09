@@ -17,6 +17,7 @@ function GalleryProduct() {
     <div className="space-y-3 ">
       <Swiper
         navigation={true}
+        loop={true}
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}

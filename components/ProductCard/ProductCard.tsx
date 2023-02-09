@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { cartProduct } from "../../../interface";
+import { cartProduct } from "../../interface";
 import ColorCard from "./ColorCard";
-
 
 import PriceCard from "./PriceCard";
 
-function ProductCard({ img, name, price,colors }: cartProduct) {
+function ProductCard({ img, name, price, colors }: cartProduct) {
   return (
     <Link href={"/a"}>
       <div

@@ -4,10 +4,11 @@ import bannerImg from "public/img/slider4.jpg";
 import ListIconCategories from "components/category/ListIconCategories";
 import Banner from "components/Banner";
 import Brand from "components/Brand";
-import TopProduct from "@/components/products/TopProduct";
+
 import Feature from "@/components/feature";
 import Testimonials from "@/components/Testimonials";
-import ShegeftAngizan from "components/products/ShegeftAngizan";
+import ShegeftAngizan from "@/components/productsSlider/ShegeftAngizan";
+import TopProduct from "@/components/productsSlider/TopProduct";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/*  A div that contains all the components that are going to be displayed on the home page. */}
       <div className="md:px-7 overflow-x-hidden px-1 space-y-5 mt-5">
         <Slide />
         <ListIconCategories />

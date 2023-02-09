@@ -1,12 +1,12 @@
 import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import CartProduct from "./ProductCard/ProductCard";
+import CartProduct from "../ProductCard/ProductCard";
 import { sliderProducts } from "../../interface";
 import SliderForList from "../../shared/SliderForList";
 import Link from "next/link";
 
-function SliderProducts({ link, products, children }: sliderProducts) {
+function ProductsSlider({ link, products, children }: sliderProducts) {
   return (
     <div className="space-y-4  ">
       {children}
@@ -40,4 +40,4 @@ function SliderProducts({ link, products, children }: sliderProducts) {
   );
 }
 
-export default SliderProducts;
+export default ProductsSlider;

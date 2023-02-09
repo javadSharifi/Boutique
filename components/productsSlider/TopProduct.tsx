@@ -1,5 +1,5 @@
-import React from 'react'
-import SliderProducts from './SliderProducts'
+import React from "react";
+import SliderProducts from "./ProductsSlider";
 import img1 from "public/img/moncan/1.jpg";
 import img3 from "public/img/moncan/3.jpg";
 import img4 from "public/img/moncan/4.jpg";
@@ -39,12 +39,14 @@ function TopProduct() {
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
     },
   ];
- 
-  return <SliderProducts link='as' products={products}  >
-    <div className='text-2xl mb-2 font-bold text-center'>
+
+  return (
+    <SliderProducts link="as" products={products}>
+      <div className="text-2xl mb-2 font-bold text-center">
         <h2>برترین محصولات فروشگاه</h2>
-    </div>
-  </SliderProducts>;
+      </div>
+    </SliderProducts>
+  );
 }
 
-export default TopProduct
+export default TopProduct;

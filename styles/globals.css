@@ -23,5 +23,6 @@
   .button-outline{
     @apply  text-red-400 bg-transparent  border-2 hover:border-red-500  border-red-500/80    hover:bg-transparent  hover:text-lg
   }
+
   /* ... */
 }
