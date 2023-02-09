@@ -39,7 +39,7 @@ function Testimonials() {
   return (
     <div className="text-center pt-6 space-y-7">
       <h3 className="text-2xl "> اخریدن نظر کاربران</h3>
-      <SliderForList delay={6000}>
+      <SliderForList key="Testimonials" delay={6000}>
         <>
           {data.map(({ description, img, name }) => (
             <>

@@ -11,7 +11,7 @@ function ProductsSlider({ link, products, children }: sliderProducts) {
     <div className="space-y-4  ">
       {children}
       <div>
-        <SliderForList>
+        <SliderForList key="ProductsSlider">
           <>
             {products.map(({ img, name, price, colors }) => (
               <SwiperSlide key={name}>

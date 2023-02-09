@@ -28,6 +28,7 @@ function product() {
           <GalleryProduct />
         </div>
       </div>
+     
       <div className="w-full">
         <Feature className=" w-10 sm:w-16 sm:h-16 md:w-10 h-12 md:h-10 lg:w-16 lg:h-16" />
       </div>

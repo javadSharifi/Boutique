@@ -60,7 +60,6 @@ function Brand() {
   return (
     <div
       data-aos="fade-up"
-      
       className="flex  flex-col  justify-center gap-8 py-6"
     >
       <h3 className="text-center text-2xl font-bold ">
@@ -69,6 +68,7 @@ function Brand() {
       <SliderForList
         delay={4000}
         slidesPerView={{ xl: 7, xxl: 7, lg: 6, md: 5, sm: 4, sx: 4 }}
+        key="Brand"
       >
         <div className="space-x-3">
           {brandList.map(({ img, title }) => (
