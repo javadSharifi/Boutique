@@ -6,12 +6,18 @@ import ColorCard from "./ColorCard";
 
 import PriceCard from "./PriceCard";
 
-function ProductCard({ img, name, price, colors }: cartProduct) {
+function ProductCard({
+  img,
+  name,
+  price,
+  colors,
+  data_aos ="fade-up",
+}: cartProduct) {
   return (
     <Link href={"/a"}>
       <div
-        data-aos="fade-left"
-        className=" h-[17rem] space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
+        data-aos={data_aos}
+        className=" h-[17rem] w-full space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
       >
         <div className="w-full rounded-2xl overflow-hidden  relative h-3/5  md:h-2/3   ">
           <Image

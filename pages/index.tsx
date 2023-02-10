@@ -4,7 +4,6 @@ import bannerImg from "public/img/slider4.jpg";
 import ListIconCategories from "components/category/ListIconCategories";
 import Banner from "components/Banner";
 import Brand from "components/Brand";
-
 import Feature from "@/components/feature";
 import Testimonials from "@/components/Testimonials";
 import ShegeftAngizan from "@/components/productsSlider/ShegeftAngizan";
@@ -24,6 +23,7 @@ export default function Home() {
         <Slide />
         <ListIconCategories />
         <ShegeftAngizan />
+        
         <Banner img={bannerImg} link="test" title="test" />
         <Brand />
         <TopProduct />

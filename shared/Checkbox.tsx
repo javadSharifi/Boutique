@@ -8,13 +8,13 @@ function Checkbox({ name }: { name: string }) {
   return (
     <div className="form-control">
       <label className="flex justify-between">
+        <span className="label-text lg:text-lg font-bold">{name}</span>
         <input
           type="checkbox"
           checked={checked}
           onChange={handleChange}
           className="checkbox checkbox-secondary "
         />
-        <span className="label-text">{name}</span>
       </label>
     </div>
   );

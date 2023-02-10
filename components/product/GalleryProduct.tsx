@@ -25,13 +25,28 @@ function GalleryProduct() {
         className="mySwiper2 w-4/6 relative h-[26rem]  rounded-2xl border-2  "
       >
         <SwiperSlide>
-          <Image alt="s" className="w-full h-full " fill src={img1} />
+          <Image
+            alt="s"
+            className="w-full h-full hover:scale-110 transition duration-300 ease-in-out "
+            fill
+            src={img1}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="s" className="w-full h-full " fill src={img2} />
+          <Image
+            alt="s"
+            className="w-full h-full hover:scale-110 transition duration-300 ease-in-out "
+            fill
+            src={img2}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="s" className="w-full h-full " fill src={img3} />
+          <Image
+            alt="s"
+            className="w-full h-full hover:scale-110 transition duration-300 ease-in-out "
+            fill
+            src={img3}
+          />
         </SwiperSlide>
       </Swiper>
 

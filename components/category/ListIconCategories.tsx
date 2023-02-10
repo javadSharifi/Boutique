@@ -42,7 +42,7 @@ function ListIconCategories() {
       {iconCategories.map(({ icon, name }) => (
         <Link
           key={name}
-          href={name}
+          href={`category/${name}`}
           className="flex flex-col justify-center items-center"
         >
           <div className="flex flex-col  group  h-20 md:h-28  w-[4.5rem] sm:w-20 sm:h-24 md:w-24 lg:h-[6.50rem] text-sm md:text-base text-center gap-2 font-bold ">

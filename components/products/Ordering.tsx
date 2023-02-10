@@ -16,7 +16,7 @@ function Ordering() {
   ];
 
   return (
-    <div className="bg-slate-200/60 px-3 text-base  flex justify-between rounded-lg w-full h-14">
+    <div className="bg-slate-200/60 px-3 text-base  hidden md:flex justify-between rounded-lg w-full h-14">
       <div className="w-2/12  gap-4 flex justify-center items-center">
         <input
           onChange={handleChange}

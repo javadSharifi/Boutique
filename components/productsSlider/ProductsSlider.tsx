@@ -16,6 +16,7 @@ function ProductsSlider({ link, products, children }: sliderProducts) {
             {products.map(({ img, name, price, colors }) => (
               <SwiperSlide key={name}>
                 <CartProduct
+                  data_aos="fade-left"
                   colors={colors}
                   img={img}
                   name={name}

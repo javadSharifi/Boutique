@@ -6,8 +6,11 @@ import logo from "@/img/logo.png";
 function Auth() {
   return (
     <>
-      <label htmlFor="auth" className="button  flex justify-center items-center  h-12 px-7 font-bold">
-          ورود / ثبت نام
+      <label
+        htmlFor="auth"
+        className="button  flex justify-center items-center  h-12 px-7 font-bold"
+      >
+        ورود / ثبت نام
       </label>
 
       <input type="checkbox" id="auth" className="modal-toggle" />
@@ -33,7 +36,13 @@ function Auth() {
                 placeholder="شماره همراه"
               />
             </div>
-            <button className="button w-2/4 py-3"> ادامه</button>
+            <button
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+              className="button w-2/4 py-3"
+            >
+              ادامه
+            </button>
             <p>ورود شما به معنای پذیرش شرایط وقوانین حریم‌خصوصیاست</p>
           </div>
         </label>

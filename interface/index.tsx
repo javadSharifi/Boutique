@@ -4,6 +4,7 @@ export interface cartProduct {
   img: StaticImageData;
   name: string;
   price: string;
+  data_aos?:string;
   colors: Array<string>;
 }
 export interface sliderProducts {

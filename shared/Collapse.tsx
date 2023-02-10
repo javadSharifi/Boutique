@@ -12,10 +12,10 @@ function Collapse({ title, value = false, children }: ICollapse) {
     setChecked(!checked);
   };
   return (
-    <div className="collapse w-full rounded-lg   collapse-plus border-2     ">
+    <div className="collapse w-full rounded-lg   collapse-plus border-2 ">
       <input type="checkbox" checked={checked} onChange={handleChange} />
-      <div className="collapse-title  text-xl font-medium">{title}</div>
-      <div dir="ltr" className="collapse-content text-lg px-8  ">
+      <div className="collapse-title md:text-sm  lg:text-xl font-medium">{title}</div>
+      <div  className="collapse-content text-lg lg:px-8  ">
         {children}
       </div>
     </div>

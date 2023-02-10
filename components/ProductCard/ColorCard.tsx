@@ -1,6 +1,6 @@
 function ColorCard({ colors }: { colors: Array<string> }) {
   return (
-    <div className="flex gap-1  text-center self-end mb-2">
+    <div className="flex gap-1 flex-wrap  text-center self-end mb-2">
       {colors.map((color) => (
         <div
           style={{ backgroundColor: color }}
