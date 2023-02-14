@@ -4,13 +4,12 @@ import React from "react";
 interface btnNavigation {
   name: string;
   Icon: any;
-  link:string
+  link: string;
 }
 
-function BtnNavigation({ name, Icon,link }: btnNavigation) {
+function BtnNavigation({ name, Icon, link }: btnNavigation) {
   return (
-    <Link href={link} about={name} className="flex  flex-col  items-center ">
-        
+    <Link href={link} about={name} className="flex hover:text-red-500  flex-col  items-center ">
       <div>
         <Icon className="text-xs  inline-block  h-8" />
       </div>

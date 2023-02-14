@@ -18,43 +18,43 @@ function Brand() {
   const brandList: IBrandList[] = [
     {
       img: img1,
-      title: "test",
+      title: "test1",
     },
     {
       img: img2,
-      title: "test",
+      title: "test2",
     },
     {
       img: img3,
-      title: "test",
+      title: "test3",
     },
     {
       img: img4,
-      title: "test",
+      title: "test4",
     },
     {
       img: img5,
-      title: "test",
+      title: "test5",
     },
     {
       img: img6,
-      title: "test",
+      title: "test6",
     },
     {
       img: img7,
-      title: "test",
+      title: "test7",
     },
     {
       img: img8,
-      title: "test",
+      title: "test8",
     },
     {
       img: img9,
-      title: "test",
+      title: "test9",
     },
     {
       img: img10,
-      title: "test",
+      title: "test10",
     },
   ];
   return (
@@ -68,9 +68,8 @@ function Brand() {
       <SliderForList
         delay={4000}
         slidesPerView={{ xl: 7, xxl: 7, lg: 6, md: 5, sm: 4, sx: 4 }}
-        key="Brand"
       >
-        <div className="space-x-3">
+        <div className="space-x-3" >
           {brandList.map(({ img, title }) => (
             <SwiperSlide key={title}>
               <Image alt={title} src={img} placeholder="blur" />

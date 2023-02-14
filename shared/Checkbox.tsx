@@ -8,7 +8,7 @@ function Checkbox({ name }: { name: string }) {
   return (
     <div className="form-control">
       <label className="flex justify-between">
-        <span className="label-text lg:text-lg font-bold">{name}</span>
+        <span className="label-text text-xl md:text-base lg:text-lg font-bold">{name}</span>
         <input
           type="checkbox"
           checked={checked}

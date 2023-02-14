@@ -9,9 +9,9 @@ function Filters() {
   return (
     <div
       dir="rtl"
-      className="bg-slate-200/60 flex flex-col   gap-4 p-2 items-center w-full rounded-lg  "
+      className="md:bg-slate-200/60 flex flex-col   gap-4 p-2 items-center w-full rounded-lg  "
     >
-      <h3 className=" md:text-base  lg:text-lg font-bold"> فیلتر محصول</h3>
+      <h3 className=" text-2xl md:text-base  lg:text-lg font-bold"> فیلتر محصول</h3>
       <Category />
       <Size />
       <BasedOnPrice/>

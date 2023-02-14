@@ -6,7 +6,7 @@ import ProductDescription from "@/components/product/ProductDescription";
 import ProductFeature from "@/components/product/ProductFeature";
 import ProductFeedback from "@/components/product/ProductFeedback";
 import ProductSize from "@/components/product/ProductSize";
-import ProductTabel from "@/components/product/ProductTabel";
+
 import TopProduct from "@/components/productsSlider/TopProduct";
 
 import React from "react";
@@ -33,8 +33,7 @@ function product() {
       <div className="w-full">
         <Feature className=" w-10 sm:w-16 sm:h-16 md:w-10 h-12 md:h-10 lg:w-16 lg:h-16" />
       </div>
-      <ProductTabel/>
-      <div className=" w-10/12  m-auto">
+      <div className=" w-11/12  m-auto">
           <TopProduct />
       </div>
     </div>

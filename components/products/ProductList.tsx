@@ -10,31 +10,31 @@ import CartProduct from "components/ProductCard";
 function ProductList() {
   const products: cartProduct[] = [
     {
-      name: "lorder 1",
+      name: "lorder1",
       price: "30",
       img: img1,
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
     },
     {
-      name: "lorder 1",
+      name: "lorder2",
       price: "30",
       img: img3,
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
     },
     {
-      name: "lorder 1",
+      name: "lorder3",
       price: "30",
       img: img4,
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
     },
     {
-      name: "lorder 1",
+      name: "lorder4",
       price: "30",
       img: img5,
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
     },
     {
-      name: "lorder 1",
+      name: "lorder5",
       price: "30",
       img: img7,
       colors: ["#FF9999", "#7FFFA1", "#EEF685", "#99DFF9"],
@@ -43,8 +43,20 @@ function ProductList() {
   return (
     <div className="grid  gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4   ">
       {products.map(({ img, name, price, colors }) => (
+        <>
+          {console.log(name)}
+          <CartProduct
+            key={name + 2}
+            colors={colors}
+            img={img}
+            name={name}
+            price={price}
+          />
+        </>
+      ))}
+      {products.map(({ img, name, price, colors }) => (
         <CartProduct
-          key={name}
+          key={name + 1}
           colors={colors}
           img={img}
           name={name}
@@ -53,16 +65,7 @@ function ProductList() {
       ))}
       {products.map(({ img, name, price, colors }) => (
         <CartProduct
-          key={name}
-          colors={colors}
-          img={img}
-          name={name}
-          price={price}
-        />
-      ))}
-      {products.map(({ img, name, price, colors }) => (
-        <CartProduct
-          key={name}
+          key={name + 4}
           colors={colors}
           img={img}
           name={name}
@@ -71,7 +74,7 @@ function ProductList() {
       ))}{" "}
       {products.map(({ img, name, price, colors }) => (
         <CartProduct
-          key={name}
+          key={name + 5}
           colors={colors}
           img={img}
           name={name}

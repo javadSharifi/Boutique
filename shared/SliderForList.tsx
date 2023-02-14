@@ -61,8 +61,9 @@ function SliderForList({
       lazy={true}
       modules={[Autoplay, Pagination, Lazy, Navigation]}
       className="w-full h-full "
+
     >
-      <>{children}</>
+      {children}
     </Swiper>
   );
 }

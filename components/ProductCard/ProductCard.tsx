@@ -14,7 +14,7 @@ function ProductCard({
   data_aos ="fade-up",
 }: cartProduct) {
   return (
-    <Link href={"/a"}>
+    <Link href={"/product/"+name}>
       <div
         data-aos={data_aos}
         className=" h-[17rem] w-full space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
