@@ -32,9 +32,8 @@ function Auth() {
             />
           </div>
           <button
-            data-mdb-ripple="true"
-            data-mdb-ripple-color="light"
-            className="button w-2/4 py-3"
+
+            className=" w-2/4 py-3 btn btn-error text-white"
           >
             ادامه
           </button>

@@ -14,9 +14,9 @@ import React from "react";
 function product() {
   return (
     <div>
-      <div className="  grid grid-cols-2 gap-4 space-y-3  mt-10 ">
-        <div className="flex justify-end ">
-          <div className="space-y-3 w-2/3" dir="rtl">
+      <div className="  flex  flex-col-reverse md:grid md:grid-cols-2 gap-4 space-y-3 px-2  md:mt-10 ">
+        <div className="flex justify-end  ">
+          <div className="space-y-3 w-full md:w-2/3" dir="rtl">
             <ProductDescription />
             <ProductFeedback />
             <ProductFeature />
@@ -29,12 +29,12 @@ function product() {
           <GalleryProduct />
         </div>
       </div>
-     
+
       <div className="w-full">
         <Feature className=" w-10 sm:w-16 sm:h-16 md:w-10 h-12 md:h-10 lg:w-16 lg:h-16" />
       </div>
       <div className=" w-11/12  m-auto">
-          <TopProduct />
+        <TopProduct />
       </div>
     </div>
   );

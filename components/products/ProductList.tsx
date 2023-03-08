@@ -43,38 +43,8 @@ function ProductList() {
   return (
     <div className="grid  gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4   ">
       {products.map(({ img, name, price, colors }) => (
-        <>
-          {console.log(name)}
-          <CartProduct
-            key={name + 2}
-            colors={colors}
-            img={img}
-            name={name}
-            price={price}
-          />
-        </>
-      ))}
-      {products.map(({ img, name, price, colors }) => (
         <CartProduct
-          key={name + 1}
-          colors={colors}
-          img={img}
-          name={name}
-          price={price}
-        />
-      ))}
-      {products.map(({ img, name, price, colors }) => (
-        <CartProduct
-          key={name + 4}
-          colors={colors}
-          img={img}
-          name={name}
-          price={price}
-        />
-      ))}{" "}
-      {products.map(({ img, name, price, colors }) => (
-        <CartProduct
-          key={name + 5}
+          key={name + 2}
           colors={colors}
           img={img}
           name={name}

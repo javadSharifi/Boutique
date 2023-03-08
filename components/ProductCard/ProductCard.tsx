@@ -1,7 +1,9 @@
+import { addCommas, digitsEnToFa } from "@persian-tools/persian-tools";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { cartProduct } from "../../interface";
+import CardDiscount from "./CardDiscount";
 import ColorCard from "./ColorCard";
 
 import PriceCard from "./PriceCard";
@@ -11,15 +13,16 @@ function ProductCard({
   name,
   price,
   colors,
-  data_aos ="fade-up",
+  data_aos = "fade-up",
 }: cartProduct) {
   return (
-    <Link href={"/product/"+name}>
+    <Link href={"/product/" + name}>
       <div
-        data-aos={data_aos}
-        className=" h-[17rem] w-full space-y-2 p-1 shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
+        // data-aos={data_aos}
+        className=" h-[17rem] w-full space-y-2 p-1 relative shadow-md shadow-slate-400/23  hover:shadow-lg mb-2 border-2 rounded-2xl   "
       >
         <div className="w-full rounded-2xl overflow-hidden  relative h-3/5  md:h-2/3   ">
+          <CardDiscount  />
           <Image
             src={img}
             placeholder="blur"
