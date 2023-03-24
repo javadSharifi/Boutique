@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*  A div that contains all the components that are going to be displayed on the home page. */}
-      <div className="md:px-7 overflow-x-hidden px-1 space-y-5 mt-5">
+      <div className="md:px-7  overflow-x-hidden px-1 space-y-5 mt-5">
         <Slide />
         <ListIconCategories />
         <ShegeftAngizan />
