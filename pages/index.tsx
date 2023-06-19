@@ -8,6 +8,8 @@ import Feature from "@/components/feature";
 import Testimonials from "@/components/Testimonials";
 import ShegeftAngizan from "@/components/productsSlider/ShegeftAngizan";
 import TopProduct from "@/components/productsSlider/TopProduct";
+import Products from "@/components/productsSlider/Products";
+
 
 export default function Home() {
   return (
@@ -19,15 +21,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*  A div that contains all the components that are going to be displayed on the home page. */}
-      <div className="md:px-7  overflow-x-hidden px-1 space-y-5 mt-5">
+      <div className="md:px-7 overflow-x-hidden px-1 space-y-5 mt-5">
         <Slide />
         <ListIconCategories />
         <ShegeftAngizan />
         
         <Banner img={bannerImg} link="test" title="test" />
         <Brand />
-        <TopProduct />
+        <Products name="برترین محصولات فروشگاه" />
         <Testimonials />
+        <Products name="تازه ترین محصول ها "  />
         <Feature className=" w-10 sm:w-16 sm:h-16 md:w-24 h-12 md:h-20" />
       </div>
     </>

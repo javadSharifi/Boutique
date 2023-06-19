@@ -6,14 +6,17 @@ function Checkbox({ name }: { name: string }) {
     setChecked(!checked);
   };
   return (
-    <div className="form-control">
+    <div className="form-control " >
       <label className="flex justify-between">
-        <span className="label-text text-xl md:text-base lg:text-lg font-bold">{name}</span>
+        <span className="label-text text-xl font-bold md:text-base lg:text-lg">
+          {name}
+        </span>
         <input
           type="checkbox"
           checked={checked}
           onChange={handleChange}
-          className="checkbox checkbox-secondary "
+         
+          className="checkbox-error    checkbox "
         />
       </label>
     </div>

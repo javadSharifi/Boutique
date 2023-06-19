@@ -7,22 +7,17 @@ import Link from "next/link";
 
 function Nev() {
   return (
-    <header className="w-full h-16  relative px-2 md:px-6 mt-3  flex justify-between ">
-      <div className="flex items-center w-full sm:w-auto gap-6 ">
-        <div className="md:w-36 md:h-12 xl:w-44 xl:h-14 relative hidden sm:w-32 sm:h-8 sm:inline">
+    <header className="relative mt-3 flex h-16 w-full flex-row-reverse justify-between  px-2 md:px-6 ">
+      <div>
+        <Services />
+      </div>
+      <div className="flex w-full items-center gap-6 sm:w-auto ">
+        <div className="relative hidden sm:inline sm:h-8 sm:w-32 md:h-12 md:w-36 xl:h-14 xl:w-44">
           <Link href="/" about="logo">
-            <Image
-              fill
-              src={logo}
-              alt="logo"
-              sizes="(max-width: 768px) 50vw"
-            />
+            <Image fill src={logo} alt="logo" sizes="(max-width: 768px) 50vw" />
           </Link>
         </div>
         <Search />
-      </div>
-      <div>
-        <Services />
       </div>
     </header>
   );

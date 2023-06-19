@@ -6,17 +6,19 @@ import ProductDescription from "@/components/product/ProductDescription";
 import ProductFeature from "@/components/product/ProductFeature";
 import ProductFeedback from "@/components/product/ProductFeedback";
 import ProductSize from "@/components/product/ProductSize";
+import ProductTab from "@/components/product/ProductTab";
 
 import TopProduct from "@/components/productsSlider/TopProduct";
+import { Tab } from "@headlessui/react";
 
 import React from "react";
 
 function product() {
   return (
     <div>
-      <div className="  flex  flex-col-reverse md:grid md:grid-cols-2 gap-4 space-y-3 px-2  md:mt-10 ">
+      <div className="  flex  flex-col-reverse gap-4 space-y-3 px-2 md:mt-10 md:grid  md:grid-cols-2 ">
         <div className="flex justify-end  ">
-          <div className="space-y-3 w-full md:w-2/3" dir="rtl">
+          <div className="w-11/12 space-y-3 md:w-2/3 mr-4" dir="rtl">
             <ProductDescription />
             <ProductFeedback />
             <ProductFeature />
@@ -25,15 +27,13 @@ function product() {
             <ProductButton />
           </div>
         </div>
-        <div>
-          <GalleryProduct />
-        </div>
+        <GalleryProduct />
       </div>
-
       <div className="w-full">
-        <Feature className=" w-10 sm:w-16 sm:h-16 md:w-10 h-12 md:h-10 lg:w-16 lg:h-16" />
+        <Feature className=" h-12 w-10 sm:h-16 sm:w-16 md:h-10 md:w-10 lg:h-16 lg:w-16" />
       </div>
-      <div className=" w-11/12  m-auto">
+      <ProductTab />
+      <div className=" m-auto w-11/12 ">
         <TopProduct />
       </div>
     </div>

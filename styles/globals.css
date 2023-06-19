@@ -15,16 +15,28 @@
 }
 @layer base {
   .btn-timers {
-    @apply bg-red-500/80 text-center  w-10 h-9 md:w-12 md:h-10   text-white rounded-lg;
+    @apply h-9 w-10  rounded-lg bg-red-500/80 text-center text-white   md:h-10 md:w-12;
   }
   .button {
-    @apply rounded-lg text-center  transition-all duration-200 text-base  text-white bg-red-500/80 hover:bg-red-500 border-0;
+    @apply rounded-lg border-0  bg-red-500/80 text-center text-base  text-white transition-all duration-200 hover:bg-red-500;
   }
   .button-outline {
-    @apply text-red-400 bg-transparent  border-2 hover:border-red-500  border-red-500/80    hover:bg-transparent  hover:text-lg;
+    @apply border-2 border-red-500/80  bg-transparent text-red-400  hover:border-red-500    hover:bg-transparent  hover:text-lg;
   }
   .Btn-Mobile {
-    @apply btn border-gray-400  text-gray-500 btn-outline hover:btn-error font-bold;
+    @apply btn-outline btn  border-gray-400 font-bold text-gray-500 hover:btn-error;
+  }
+  .Box-Profile {
+    @apply w-full  rounded-xl border-2 border-gray-300 p-4 px-7;
+  }
+  .List-Address {
+    @apply grid  w-full grid-cols-12  xl:px-9 sm:px-3  py-4  text-center;
+  }
+  .Tabe-List{
+    @apply border-red-400 px-3 pb-2 focus:outline-none  focus-visible:border-b-2
+  }
+  .Tab-Panel{
+    @apply  bg-slate-50 py-4 px-6 rounded-xl 
   }
 
   /* ... */

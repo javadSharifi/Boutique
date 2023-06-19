@@ -14,7 +14,7 @@ function Ordering() {
   ];
 
   return (
-    <div className="md:bg-slate-200/60 gap-5 md:gap-0 px-1 text-base  flex-col md:flex-row   flex justify-between rounded-lg w-full md:h-14">
+    <div className="md:border-2 gap-5 md:gap-0 px-1 text-base  flex-col md:flex-row   flex justify-between rounded-lg w-full md:h-14">
       <div className="md:w-3/12 text-xl  md:text-sm font-bold  gap-4 flex justify-between md:justify-center items-center">
         <input
           onChange={handleChange}

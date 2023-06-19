@@ -6,7 +6,7 @@ export function OpenModal({
   children,
 }: {
   name: string;
-  className?: string;
+  className?: string | undefined;
   children: JSX.Element;
 }) {
   return (
@@ -17,20 +17,29 @@ export function OpenModal({
 }
 function Modal({
   name,
+  title,
   className,
   children,
 }: {
   name: string;
+  title?: string;
   className?: string;
   children: JSX.Element;
 }) {
   return (
     <>
-      <input type="checkbox" id={name} className="modal-toggle" />
-      <label htmlFor={name} className="modal cursor-pointer">
-        <label className="modal-box space-y-5 relative pb-14" htmlFor="">
-          <label htmlFor={name} className=" text-2xl btn-circle  ">
-            ✕
+      <input type="checkbox" id={name} className="modal-toggle  " />
+      <label htmlFor={name} className="modal cursor-pointer ">
+        <label
+          className={`modal-box relative space-y-5  pt-4 ${className} `}
+          htmlFor=""
+        >
+          <label
+            htmlFor={name}
+            className=" static top-0 flex w-full justify-between  border-b-2  pb-2 "
+          >
+            <p className="text-2xl">✕</p>
+            <p className="self-center text-lg">{title}</p>
           </label>
           {children}
         </label>

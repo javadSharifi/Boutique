@@ -4,12 +4,12 @@ import BtnNavigation from './BtnNavigation'
 
 function BottomNavigation() {
   return (
-    <div className=" fixed z-50 w-screen h-16 sm:hidden bg-slate-100 border-t-2 border-gray-200   bottom-0 rounded-t-lg   ">
-      <div className="flex justify-between  mt-1 px-6  gap-3 ">
-        <BtnNavigation link='s'  Icon={HomeIcon} name="خانه" />
-        <BtnNavigation link='s' Icon={ShoppingBagIcon} name="سبد خرید " />
-        <BtnNavigation link='s' Icon={SquaresPlusIcon} name="دست بندی" />
-        <BtnNavigation link='s' Icon={UserCircleIcon} name="پروفایل" />
+    <div className=" fixed bottom-0 z-50 h-16 w-screen rounded-t-lg border-t-2 border-gray-200   bg-slate-100 sm:hidden   ">
+      <div className="mt-1 flex  justify-between gap-3  px-6 ">
+        <BtnNavigation link="s" Icon={HomeIcon} name="خانه" />
+        <BtnNavigation link="s" Icon={ShoppingBagIcon} name="سبد خرید " />
+        <BtnNavigation link="s" Icon={SquaresPlusIcon} name="دست بندی" />
+        <BtnNavigation link="profile" Icon={UserCircleIcon} name="پروفایل" />
       </div>
     </div>
   );

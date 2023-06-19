@@ -5,8 +5,7 @@ import Nav from "components/nav";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import BottomNavigation from "@/components/BottomNavigation";
-
+import BottomNavigation from "@/components/bottomNavigation";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -16,24 +15,21 @@ export default function App({ Component, pageProps }: AppProps) {
       offset: 50,
     });
   }, []);
-   useEffect(() => {
-     const use = async () => {
-       (await import("tw-elements")).default;
-     };
-     use();
-   }, []);
-
+  useEffect(() => {
+    const use = async () => {
+      (await import("tw-elements")).default;
+    };
+    use();
+  }, []);
 
   return (
-    <>
-      <div className="bg-white  relative ">
-        <BottomNavigation />
-        <Nav />
-        <div className="pb-20 sm:pb-0">
-          <Component {...pageProps} />
-        </div>
-        <Footer />
+    <div className="relative   ">
+      <BottomNavigation />
+      <Nav />
+      <div className="pb-20 min-h-[60vh] sm:pb-0">  
+        <Component {...pageProps} />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }

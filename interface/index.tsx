@@ -1,11 +1,10 @@
 import { StaticImageData } from "next/image";
 
 export interface cartProduct {
-  img: StaticImageData;
   name: string;
   price: string;
-  data_aos?:string;
-  colors: Array<string>;
+  img: any;
+  colors: string[];
 }
 export interface sliderProducts {
   link: string;
@@ -24,7 +23,26 @@ export interface IBrandList {
 
 export interface IBoxFeature {
   img: StaticImageData;
-  className? : string;
+  className?: string;
   name: string;
 }
 
+export type HeroIcon = (props: React.ComponentProps<"svg">) => JSX.Element;
+
+export interface IProfileBtn {
+  Icon: any;
+  name: string;
+  link: string;
+}
+
+export interface IProfileCart {
+  Icon: any;
+  placeholder: string;
+  name: string;
+  type: "name" | "email" | "number" | "tel";
+}
+export type TProfileLink = {
+  link: string;
+  name: string;
+  Icon: any;
+};
