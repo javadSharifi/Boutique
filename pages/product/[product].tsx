@@ -7,8 +7,9 @@ import ProductFeature from "@/components/product/ProductFeature";
 import ProductFeedback from "@/components/product/ProductFeedback";
 import ProductSize from "@/components/product/ProductSize";
 import ProductTab from "@/components/product/ProductTab";
-
 import TopProduct from "@/components/productsSlider/TopProduct";
+
+
 import { Tab } from "@headlessui/react";
 
 import React from "react";

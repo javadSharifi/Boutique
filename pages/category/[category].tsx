@@ -1,10 +1,9 @@
-
-import Products from "@/components/products";
+import SearchProducts from "@/components/searchProducts/SearchProducts";
 import React from "react";
 
 function Category() {
   return (
-    <Products/>
+    <SearchProducts/>
   );
 }
 

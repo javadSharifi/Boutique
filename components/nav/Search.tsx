@@ -6,12 +6,14 @@ function Search() {
   const [search, setSearch] = useState<string>("");
   return (
     <div className="flex  h-full w-full    gap-2  rounded-xl bg-slate-300/30 p-1 md:w-[40vw] lg:w-[30rem] ">
+      <button type="submit">
       <Link
         href={"/search/" + search}
         className="flex w-10 flex-wrap justify-center"
-      >
+        >
         <MagnifyingGlassIcon className="w-12  text-slate-500" />
       </Link>
+        </button>
       <input
         type="search"
         onChange={(e) => e.target.value && setSearch(e.target.value)}

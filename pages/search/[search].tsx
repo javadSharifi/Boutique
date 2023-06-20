@@ -1,8 +1,9 @@
-import Products from '@/components/products';
+
+import SearchProducts from '@/components/searchProducts/SearchProducts';
 import React from 'react'
 
 function SearchPage() {
-  return <Products  />;
+  return <SearchProducts  />;
 }
 
 export default SearchPage

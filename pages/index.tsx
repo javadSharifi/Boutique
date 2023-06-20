@@ -7,8 +7,8 @@ import Brand from "components/Brand";
 import Feature from "@/components/feature";
 import Testimonials from "@/components/Testimonials";
 import ShegeftAngizan from "@/components/productsSlider/ShegeftAngizan";
-import TopProduct from "@/components/productsSlider/TopProduct";
 import Products from "@/components/productsSlider/Products";
+
 
 
 export default function Home() {
